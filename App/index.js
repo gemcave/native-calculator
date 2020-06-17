@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native';
 import Button from './components/Button';
 import Row from './components/Row';
 
-import calculator, { initialState } from '../utils/calculator';
+import calculator, { initialState } from './utils/calculator';
 
 const styles = StyleSheet.create({
   container: {
