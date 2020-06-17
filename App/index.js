@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native';
 import Button from './components/Button';
 import Row from './components/Row';
@@ -22,11 +22,6 @@ const styles = StyleSheet.create({
 
 export default function App() {
   const [state, setState] = useState(initialState);
-
-  useEffect(() => {
-    console.log(state);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [state]);
 
   const handleTap = (type, value) => {
     setState((prevState) => calculator(type, value, prevState));
