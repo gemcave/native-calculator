@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import React from 'react';
 import { Text, StyleSheet, TouchableOpacity, Dimensions } from 'react-native';
 const screen = Dimensions.get('window');
